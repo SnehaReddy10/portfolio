@@ -10,7 +10,7 @@ export function TimeLineItem({
 }) {
   return (
     <li
-      className={`mb-10 ms-3 md:ms-4 pr-10`}
+      className={`mb-10 ms-2 md:ms-4 pr-10`}
       style={{
         paddingTop: `${pt}rem`,
         paddingLeft: pl ? `${window.outerWidth > '768' ? pl : pl / 10}rem` : 0,
