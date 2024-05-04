@@ -12,9 +12,9 @@ export function Resume() {
         </div>
 
         <div className="text-white text-center text-[0.6rem] md:uppercase leading-5 mt-4 md:mt-8">
-          Hello! I'm Sneha Reddy, Dedicated and results-driven Full Stack
-          Developer with 2 years of professional experience in designing,
-          developing, and deploying web applications.{' '}
+          Hello! I'm Sneha Reddy, a dedicated full stack developer fueled by a
+          passion for transforming ideas into fully functional user-centric
+          applications.
         </div>
 
         <div className="text-center mt-4 md:mt-8">
