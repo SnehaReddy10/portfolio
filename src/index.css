@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  @keyframes bounceX {
+    0% {
+      transform: rotate(-30deg);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: rotate(30deg);
+      animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+    100% {
+      transform: rotate(-30deg);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  }
+
+  .animate-bounceX {
+    animation: bounceX 2s infinite;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(100%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    100% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  }
+
+  .animate-slideLeft {
+    animation: slideLeft 1s forwards;
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    100% {
+      transform: translateX(0%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position-x: 0%;
+    }
+    100% {
+      background-position-x: 200vw;
+    }
+  }
+
+  .animate-gradient{
+    animation: gradient 7s infinite linear;
+  }
+
+  .animate-slideRight {
+    animation: slideRight 1s forwards;
+  }
+}
+
+@layer utilities{
+  .bg-gradient-r-spo{
+    @apply bg-gradient-to-r from-slate-400 via-purple-300 to-orange-200
+  }
+
+  .bg-gradient-b-spo{
+    @apply bg-gradient-to-b from-slate-400 via-purple-300 to-orange-200
+  }
+
+  .bg-gradient-r-gpo{
+    @apply bg-gradient-to-r from-green via-purple-50 to-white
+  }
+
+  .bg-gradient-l-spo{
+    @apply bg-gradient-to-l from-slate-400 via-purple-300 to-orange-200
+  }
+
+  .bg-gradient-r-po{
+    @apply bg-gradient-to-r from-slate-100 to-orange-100
+  }
+
+  .bg-gradient-r-so{
+    @apply bg-gradient-to-r from-slate-400 to-orange-200
+  }
+
+  .text-xxs{
+    @apply text-[0.6rem] leading-3 tracking-wider
+  }
+
+  .text-gradient-r-spo{
+    @apply bg-gradient-r-spo inline-block text-transparent bg-clip-text
+  }
+
+  .text-gradient-r{
+    @apply bg-gradient-r-spo text-transparent bg-clip-text
+  }
+
+  .text-gradient-r-po{
+    @apply bg-gradient-to-r from-purple-300 to-orange-200 inline-block text-transparent bg-clip-text
+  }
+}
+
+
