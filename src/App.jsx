@@ -13,6 +13,8 @@ import { useCallback, useState } from 'react';
 import tailwindConfig from '../tailwind.config';
 import resolveConfig from 'tailwindcss/resolveConfig';
 import ThemeButton from './components/v1/ThemeButton';
+import { Projects } from './components/v1/Projects';
+import SnowfallBG from './components/v1/SnowfallBG';
 
 const twFullConfig = resolveConfig(tailwindConfig);
 
@@ -23,6 +25,7 @@ function App() {
 
   return (
     <div style={theme()}>
+      <SnowfallBG />
       <BrowserRouter>
         <RecoilRoot>
           {/* <ThemeButton setDarkTheme={setDarkTheme} /> */}
@@ -51,6 +54,9 @@ function Main() {
         </section>
         <section id="professional">
           <Professional />
+        </section>
+        <section id="projects">
+          <Projects />
         </section>
         <section id="experience">
           <Experience />

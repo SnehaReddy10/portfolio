@@ -13,7 +13,7 @@ export function Home() {
       <div className="tracking-widest text-green dark:text-gradient-r-spo text-base md:text-[1.5rem] mt-7">
         FULL STACK DEVELOPER
       </div>
-      <div className="mt-1 animate-gradient bg-repeat opacity-100 bg-gradient-r-gpo dark:bg-gradient-r-spo h-[2px] shadow-orange-400 shadow-lg rounded-md"></div>
+      <div className="mt-1 animate-gradient bg-repeat opacity-100 bg-gradient-r-gpo dark:bg-gradient-r-spo h-[2px] rounded-md"></div>
     </div>
   );
 }

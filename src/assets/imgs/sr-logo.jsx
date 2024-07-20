@@ -11,7 +11,7 @@ export function SRLogo({ fontsize, isLarge }) {
           style={{ fontSize: `${fontsize}rem` }}
           onClick={() => navigate('/')}
         >
-          ƧR
+          SR
         </div>
       </div>
     </div>
