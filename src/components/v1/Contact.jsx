@@ -1,6 +1,13 @@
+import { Toaster, toast } from 'sonner';
+
 export function Contact() {
+  const notify = () => {
+    toast.success('Message sent!');
+  };
+
   return (
     <div className="py-1 md:py-10 text-white mt-[2rem] md:mt-[5rem] bg-navy-blue dark:bg-black-900 w-[90vw] md:w-[35rem] p-1 md:p-5">
+      <Toaster richColors />
       <div className="flex flex-col md:flex-row justify-between">
         <div className="mr-1 md:w-[50%] p-2 md:p-5">
           <div className="tracking-wider">CONTACT</div>
@@ -42,7 +49,10 @@ export function Contact() {
               placeholder="Message"
             />
           </div>
-          <div className="bg-green dark:text-black dark:bg-orange-200 dark:hover:bg-orange-300 m-1 p-1 w-[96%] text-[0.7rem] flex justify-center">
+          <div
+            onClick={notify}
+            className="bg-green dark:text-black dark:bg-orange-200 dark:hover:bg-orange-300 m-1 p-1 w-[96%] text-[0.7rem] flex justify-center"
+          >
             Send
           </div>
         </div>
