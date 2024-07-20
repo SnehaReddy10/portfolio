@@ -55,9 +55,9 @@ function Main() {
         <section id="professional">
           <Professional />
         </section>
-        <section id="projects">
+        {/* <section id="projects">
           <Projects />
-        </section>
+        </section> */}
         <section id="experience">
           <Experience />
         </section>
