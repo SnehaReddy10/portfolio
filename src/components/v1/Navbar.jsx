@@ -1,11 +1,10 @@
 import { NavItem } from './NavItem';
 import { SRLogo } from '../../assets/imgs/sr-logo';
-import { useLocation } from 'react-router-dom';
 
 export function Navbar() {
   let id = 0;
   const navItems = [
-    { title: 'HOME', url: '' },
+    { title: 'HOME', url: '#home' },
     { title: 'RESUME', url: '#resume' },
     { title: 'PROFESSIONAL', url: '#professional' },
     { title: 'EXPERIENCE', url: '#experience' },
