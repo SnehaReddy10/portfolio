@@ -48,7 +48,9 @@ function Main() {
   return (
     <div>
       <Card>
-        <Home />
+        <section id="home">
+          <Home />
+        </section>
         <section id="resume">
           <Resume />
         </section>
